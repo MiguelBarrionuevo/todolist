@@ -1,0 +1,50 @@
+###Nuevo Usuario
+POST http://127.0.0.1:8080/api/v1/user/
+Content-Type: application/json
+
+{
+  "username": "Miguel",
+  "password": "1010"
+}
+
+###Editar un Usuario
+PUT http://127.0.0.1:8080/api/v1/user/3
+Content-Type: application/json
+
+{
+  "username": "Miguel",
+  "password": "MABT"
+}
+
+###Eliminar Usuario
+DELETE http://127.0.0.1:8080/api/v1/user/2
+
+###Authenticacion (Error de Usuario)
+GET http://127.0.0.1:8080/api/v1/user/authenticate
+Content-Type: application/json
+
+{
+  "username": "Marioo",
+  "password": "MABT"
+}
+
+###Authenticacion (Error de Password)
+GET http://127.0.0.1:8080/api/v1/user/authenticate
+Content-Type: application/json
+
+{
+  "username": "Miguel",
+  "password": "MABT22"
+}
+
+###Authenticacion (Correcto)
+GET http://127.0.0.1:8080/api/v1/user/authenticate
+Content-Type: application/json
+
+{
+  "username": "Miguel",
+  "password": "MABT"
+}
+
+
+

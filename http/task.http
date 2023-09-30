@@ -1,0 +1,35 @@
+###Nueva Tarea
+POST http://127.0.0.1:8080/api/v1/task/
+Content-Type: application/json
+
+{
+    "name": "Incribir Materia",
+    "dueDate": "2023-09-29T15:20:00.000-04:00",
+    "label": "Universidad",
+    "completed": false
+}
+
+###Retornar todas las Tareas
+GET http://127.0.0.1:8080/api/v1/task/
+
+###Retorna una Tarea por el ID
+GET http://127.0.0.1:8080/api/v1/task/4
+
+###Editar una Tarea
+PUT http://127.0.0.1:8080/api/v1/task/4
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Calentar Alimentos",
+    "dueDate": "2023-09-29T18:40:00.000+00:00",
+    "label": "Cocina",
+    "completed": false
+}
+
+###Marcar una tarea como completada
+PUT http://127.0.0.1:8080/api/v1/task/4/complete
+
+###Eliminar una Tarea
+DELETE http://127.0.0.1:8080/api/v1/task/7
+

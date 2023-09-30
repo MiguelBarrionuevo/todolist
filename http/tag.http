@@ -1,0 +1,28 @@
+###Nuevo Tag
+POST http://127.0.0.1:8080/api/v1/tag/
+Content-Type: application/json
+
+{
+  "name": "Universidad"
+}
+
+###Obtener Tags
+GET http://127.0.0.1:8080/api/v1/tag/
+
+###Obtener Tag por id
+GET http://127.0.0.1:8080/api/v1/tag/4
+
+###Editar Tag
+PUT http://127.0.0.1:8080/api/v1/tag/1
+Content-Type: application/json
+
+{
+  "name": "Lavanderia"
+}
+
+###Eliminar Tag
+DELETE http://127.0.0.1:8080/api/v1/tag/4
+
+
+
+
